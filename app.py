@@ -14,9 +14,9 @@ st.set_page_config(
 # Databricks 接続設定（Apps環境では環境変数から自動取得）
 def get_connection():
     return sql.connect(
-        server_hostname=os.environ["DATABRICKS_HOST"],
-        http_path=os.environ["DATABRICKS_HTTP_PATH"],
-        access_token=os.environ["DATABRICKS_TOKEN"]
+        server_hostname="dbc-36982739-dae7.cloud.databricks.com",
+        http_path="/sql/1.0/warehouses/b3607f97055adf7a",
+        access_token="dapie751f6cae68995457f768b5d8678bfca"
     )
 
 # データ取得関数
